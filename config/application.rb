@@ -12,6 +12,7 @@ module ServerApp
     config.application_name = Rails.application.class.module_parent_name
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+    config.autoload_paths << "#{Rails.root}/lib"
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
